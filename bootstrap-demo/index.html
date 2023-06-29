@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Net Ninja Pro - The Book</title>
 </head>
 
@@ -65,11 +65,19 @@
                     <p class="lead my-4 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse,
                         sint!
                     </p>
-                    <a href="#princing" class="btn btn-secondary btn-lg">Buy Now</a>
+                    <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+
+                    <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button"
+                        aria-controls="sidebar">Explore my other books</a>
+
                 </div>
 
                 <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="img-fluid" src="assets/ebook-cover.png" alt="">
+
+                    <span class="tt" data-bs-placement="bottom" title="Net Ninja book cover">
+
+                        <img class="img-fluid" src="assets/ebook-cover.png" alt="">
+                    </span>
 
                 </div>
             </div>
@@ -281,7 +289,7 @@
         <div class="container-lg">
 
             <div class="text-center">
-                
+
                 <h2><i class="bi bi-stars"></i>Book Review</h2>
                 <p class="lead">What students said about my book...</p>
             </div>
@@ -362,9 +370,186 @@
 
     </section>
 
+
+    <!-- contact -->
+
+    <section id="contact">
+
+        <div class="container-lg">
+
+            <div class="text-center">
+                <h2>Get In Touch</h2>
+                <p class="lead">Questions to Ask? Fill out the form to contact me directly...</p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+
+                <div class="col-lg-6">
+
+                    <form>
+
+
+                        <label for="email" class="form-label">Email</label>
+
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input id="email" placeholder="e.g@mail.com" type="email" class="form-control">
+
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom"
+                                    title="Enter an email adress we can reply to">
+                                    <i class="bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
+
+                        </div>
+
+                        <label for="name" class="form-label">Name</label>
+
+                        <div class="input-group mb-4">
+
+                            <span class="input-group-text">
+                                <i class="bi bi-person-fill"></i>
+                            </span>
+                            <input id="name" placeholder="e.g. Mario" type="text" class="form-control">
+
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="bottom" title="It's your name">
+                                    <i class="bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
+                        </div>
+
+                        <label for="subject" class="form-label">What is your question about?</label>
+
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                            <select id="subject" class="form-select">
+
+                                <option value="pricing">Pricing</option>
+                                <option value="content">Content</option>
+                                <option value="Other">Other</option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-floating mt-4 my-5">
+                            <textarea id="query" class="form-control" style="height: 200px"></textarea>
+                            <label for="query">Your question...</label>
+                        </div>
+
+                        <div class="mb-4 text-center">
+                            <button class="btn btn-secondary" type="submit">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- get updates / modal trigger -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2>Stay in the loop</h2>
+                <p class="lead">Get the latest updates as they happen</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="text-muted-my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+                        necessitatibus fuga, repellat perferendis voluptates vel nostrum labore a illum delectus,
+                        praesentium impedit ipsum odit. Maiores dicta exercitationem accusamus reiciendis fuga!</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register For
+                        Updates</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- modal itself -->
+
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, sapiente consequuntur! Autem
+                        quae, libero harum tenetur, id explicabo maxime ratione accusamus nam earum odio alias aliquid
+                        dicta blanditiis nemo quidem eos veniam incidunt! Quasi minima facere impedit vel quo, ullam
+                        esse odio alias repellat magnam velit repudiandae, ad illo soluta!</p>
+                    <label for="modal-email" class="form-label">Your email adress:</label>
+                    <input type="email" class="form-control" id="modal-email" placeholder="e.g.mario@example.com">
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Submit</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- sidebar offcanvas -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+            <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sequi ad unde molestias omnis voluptatem
+                cupiditate sapiente dignissimos corporis soluta, nulla laborum sunt. Id quos aliquid, pariatur odio
+                consequuntur repudiandae!</p>
+
+            <!-- dropdown -->
+
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">Choose a book
+                    title</button>
+                <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+                    <li><a class="dropdown-item" href="#">Become a React Super Hero</a></li>
+                    <li><a class="dropdown-item" href="#">Build your own website</a></li>
+                    <li><a class="dropdown-item" href="#">Lets talk about vue js</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+
+
 </body>
 
 </html>
@@ -374,6 +559,3 @@
         padding: 60px 0;
     }
 </style>
-
-
-
